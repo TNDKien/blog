@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import Image from 'next/image'
+import Link from "next/link";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -8,11 +8,11 @@ export default function Home() {
       {/* Hero Section */}
       <section className="space-y-8">
         <h1 className="text-4xl font-bold">
-          Welcome to my blog{' '}
-          <span className="inline-block w-4 h-4 bg-red-500 rounded-full" />
-          {' '}I'm a developer and here I document my latest explorations.
+          Welcome to my blog{" "}
+          <span className="inline-block w-4 h-4 bg-red-500 rounded-full" />{" "}
+          I&apos;m a developer and here I document my latest explorations.
         </h1>
-        
+
         <nav className="flex gap-6">
           <Link href="/gallery" className="text-blue-500 hover:text-blue-700">
             GALLERY ↗
@@ -20,7 +20,10 @@ export default function Home() {
           <Link href="/demos" className="text-blue-500 hover:text-blue-700">
             DEMOS ↗
           </Link>
-          <Link href="/about" className="text-blue-500 hover:text-blue-700">
+          <Link
+            href="https://kiendang.nl"
+            className="text-blue-500 hover:text-blue-700"
+          >
             ABOUT ME ↗
           </Link>
         </nav>
@@ -69,10 +72,11 @@ export default function Home() {
           </CardHeader>
           <CardContent>
             <p className="text-gray-600 mb-4">
-              Learn how to create stunning web animations using Next.js, Framer Motion, GSAP and more
+              Learn how to create stunning web animations using Next.js, Framer
+              Motion, GSAP and more
             </p>
-            <Link 
-              href="/courses/web-animation" 
+            <Link
+              href="/courses/web-animation"
               className="inline-block bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800"
             >
               Learn More
@@ -81,33 +85,32 @@ export default function Home() {
         </Card>
       </section>
     </div>
-  )
+  );
 }
 
 const tutorials = [
   {
     id: 1,
-    title: 'Mask Section Transition',
-    date: 'June 2, 2024',
-    category: 'SCROLL',
-    image: '/placeholder.svg?height=400&width=600',
-    href: '/tutorials/mask-section-transition'
+    title: "Mask Section Transition",
+    date: "June 2, 2024",
+    category: "SCROLL",
+    image: "/placeholder.svg?height=400&width=600",
+    href: "/tutorials/mask-section-transition",
   },
   {
     id: 2,
-    title: 'Mouse Image Distortion',
-    date: 'June 2, 2024',
-    category: 'MOUSE',
-    image: '/placeholder.svg?height=400&width=600',
-    href: '/tutorials/mouse-image-distortion'
+    title: "Mouse Image Distortion",
+    date: "June 2, 2024",
+    category: "MOUSE",
+    image: "/placeholder.svg?height=400&width=600",
+    href: "/tutorials/mouse-image-distortion",
   },
   {
     id: 3,
-    title: 'Background Image Parallax',
-    date: 'May 25, 2024',
-    category: 'SCROLL',
-    image: '/placeholder.svg?height=400&width=600',
-    href: '/tutorials/background-image-parallax'
+    title: "Background Image Parallax",
+    date: "May 25, 2024",
+    category: "SCROLL",
+    image: "/placeholder.svg?height=400&width=600",
+    href: "/tutorials/background-image-parallax",
   },
-]
-
+];
